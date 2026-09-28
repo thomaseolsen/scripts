@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://apple.com">
+<plist version="1.0">
+<dict>
+    <!-- A unique label for your task -->
+    <key>Label</key>
+    <string>com.user.brewupdate</string>
+
+    <!-- Path to the script you want to run -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>~/GitHub/personal/scripts/brew-update-upgrade.sh</string>
+    </array>
+
+    <!-- Option B: Run at a specific time (e.g., every day at 10:30 PM) -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>08</integer>
+        <key>Minute</key>
+        <integer>00</integer>
+    </dict>
+
+    <!-- Optional: Log files to catch errors and output -->
+    <key>StandardOutPath</key>
+    <string>/tmp/brewupdate.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/brewupdate.err</string>
+</dict>
+</plist>
