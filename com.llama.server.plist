@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://apple.com">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.llama.server</string>
+
+    <!-- Path to the script you want to run -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>~/GitHub/personal/scripts/llama-server-run.sh</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/llama-server.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/llama-server.err.log</string>
+</dict>
+</plist>
